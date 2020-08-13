@@ -20,7 +20,7 @@ code {
   background-position: center;
   min-height: 100vh;
   padding: 20px 0;
-  animation: fadein 1s;
+  /* animation: fadein 1s; */
 }
 
 @keyframes fadein {
