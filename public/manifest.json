@@ -4,8 +4,8 @@
   "lang": "en",
   "description": "A simple app that listed of professional contacts",
   "start_url": "/",
-  "background_color": "#1c2329",
-  "theme_color": "#1c2329",
+  "background_color": "#1C2329",
+  "theme_color": "#1C2329",
   "dir": "ltr",
   "display": "standalone",
   "orientation": "portrait",
@@ -13,7 +13,8 @@
     {
       "src": "/manifest-icons/android-icon-192x192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "/manifest-icons/apple-icon-180x180.png",
