@@ -25,7 +25,7 @@ class ErrorBoundary extends Component {
   }
 };
 
-const renderLoader = () => <p>Loading</p>;
+const renderLoader = () => <div className='loader-wrapper'>Loading...</div>;
 
 const Root = () => {
   return (

@@ -12,6 +12,15 @@ code {
     monospace;
 }
 
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1C2329;
+  color: #FFFFFF;
+}
+
 .container {
   box-sizing: border-box;
   background-color: #1C2329;
