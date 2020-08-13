@@ -1,5 +1,7 @@
 import React from 'react';
 
+import BackgroundWebp from './images/background.webp';
+import BackgroundJpg from './images/background.jpg';
 import AvatarWebp from './images/avatar.webp';
 import AvatarPng from './images/avatar.png';
 
@@ -25,6 +27,14 @@ const dataLink = [
 const App = () => {
   return (
     <div className='container'>
+      <div className='container-bg'>
+        <ImgWithFallback
+          src={BackgroundWebp}
+          fallback={BackgroundJpg}
+          alt="Background"
+          className='container-bg-img'
+        />
+      </div>
       <div className='content'>
         <ImgWithFallback
           src={AvatarWebp}
