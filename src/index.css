@@ -39,19 +39,19 @@ code {
 
 .username {
   color: #FFFFFF;
-  font-size: 1.25em;
+  font-size: 16px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
 .bio {
-  font-size: 1em;
+  font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   width: 75%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .data-list {
