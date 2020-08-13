@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  box-sizing: border-box;
+  background-color: #1C2329;
+  background-image: url('./images/background.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 120px;
+  overflow: hidden;
+}
+
+.username {
+  color: #FFFFFF;
+  font-size: 1.25em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.bio {
+  font-size: 1em;
+  color: #FFFFFF;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.data-list {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.data-list--item {
+  text-align: center;
+}
+
+.button-link {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+.button-link:hover, .button-link:focus, .button-link:active {
+  border: 1px solid #40a9ff;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .bio {
+    width: 500px;
+  }
+
+  .data-list {
+    width: 50%;
+  }
+}
