@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import AvatarWebp from './images/avatar.webp';
 import AvatarPng from './images/avatar.png';
@@ -21,20 +20,11 @@ const dataLink = [
     label: 'WhatsApp',
     url: "https://api.whatsapp.com/send?phone=87739999776&text=Samlekom%20mhamanx..."
   },
-]
+];
 
 const App = () => {
   return (
     <div className='container'>
-      <Helmet htmlAttributes={{ lang: 'en' }}>
-        <title>PWA TautanKu</title>
-        <meta
-          name="description"
-          content="A simple app that listed of professional contacts"
-        />
-        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' />
-      </Helmet>
-
       <div className='content'>
         <ImgWithFallback
           src={AvatarWebp}
@@ -55,9 +45,8 @@ const App = () => {
         </p>
         <ul className='data-list'>
           {dataLink.map((item, index) => (
-            <li className='data-list--item'>
+            <li key={index} className='data-list--item'>
               <button
-                key={index}
                 className='button-link'
                 onClick={() => {
                   setTimeout(() => {
