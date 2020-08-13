@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import AvatarWebp from './images/avatar.webp';
 import AvatarPng from './images/avatar.png';
@@ -25,6 +26,16 @@ const dataLink = [
 const App = () => {
   return (
     <div className='container'>
+      <Helmet
+        title='PWA Fake Linktr.ee'
+        htmlAttributes={{ lang: 'en' }}
+      >
+        <meta charSet='utf-8' />
+        <meta name='description' content='Building Fake Linktr.ee with PWA' />
+        <title>Kangabbad Links</title>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js' />
+      </Helmet>
+
       <div className='content'>
         <ImgWithFallback
           src={AvatarWebp}
