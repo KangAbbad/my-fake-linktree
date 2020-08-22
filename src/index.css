@@ -33,6 +33,15 @@ code {
   padding: 20px 0;
 }
 
+.background {
+  position: 'absolute';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .avatar {
   display: block;
   margin: 0 auto;
