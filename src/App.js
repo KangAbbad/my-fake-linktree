@@ -1,10 +1,7 @@
 import React from 'react';
-import Img from 'react-cool-img';
 
 import AvatarWebp from './images/avatar.webp';
 import AvatarPng from './images/avatar.png';
-import BackgroundWebp from './images/background.webp';
-// import BackgroundJpg from './images/background.jpg';
 
 const dataLink = [
   {
@@ -28,27 +25,7 @@ const dataLink = [
 const App = () => {
   return (
     <div className='container'>
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-          zIndex: -1
-        }}
-      >
-        <Img
-          style={{
-            backgroundColor: '#1C2329',
-            width: '100%',
-            height: '100%'
-          }}
-          src={BackgroundWebp}
-          alt="React Cool Background"
-        />
-      </div>
-      <div className='content' style={{ zIndex: 2 }}>
+      <div className='content'>
         <ImgWithFallback
           src={AvatarWebp}
           fallback={AvatarPng}

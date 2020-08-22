@@ -24,11 +24,11 @@ code {
 .container {
   position: relative;
   box-sizing: border-box;
-  /* background-color: #1C2329; */
-  /* background-image: url('./images/background.webp');
-  background-image: url('./images/background.jpg'); */
-  /* background-size: cover; */
-  /* background-position: center; */
+  background-color: #1C2329;
+  background-image: url('./images/background.webp');
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   padding: 20px 0;
 }
