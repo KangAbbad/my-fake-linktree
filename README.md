@@ -1,7 +1,7 @@
-<h1 align="center">
+<h2 align="center">
   <img src="src/images/avatar.png" width="100"><br>
   <a href="https://github.com/KangAbbad/qonsen-pwa-starter" style="color: black"><span>QONSEN PWA Starter</span></a><br>
-</h1>
+</h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/react-16.13-green.svg" />
