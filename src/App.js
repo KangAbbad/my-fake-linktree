@@ -45,9 +45,8 @@ const App = () => {
         </p>
         <ul className='data-list'>
           {dataLink.map((item, index) => (
-            <li className='data-list--item'>
+            <li key={index} className='data-list--item'>
               <button
-                key={index}
                 className='button-link'
                 onClick={() => {
                   setTimeout(() => {
