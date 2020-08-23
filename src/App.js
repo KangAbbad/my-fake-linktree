@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from 'react-cool-img';
 
 import AvatarWebp from './images/avatar.webp';
 import AvatarPng from './images/avatar.png';
@@ -27,18 +26,13 @@ const App = () => {
   return (
     <div className='container'>
       <div className='content'>
-        <Img
-          style={{
-            backgroundColor: '#1C2329',
-            width: '120',
-            height: '120'
-          }}
+        <ImgWithFallback
           src={AvatarWebp}
-          srcSet={AvatarPng}
-          height={120}
-          width={120}
+          fallback={AvatarPng}
+          alt="My Avatar"
           className='avatar'
-          alt='React Cool Img'
+          height='120'
+          width='120'
         />
         <p className='username'>
           @kangabbad
@@ -72,3 +66,17 @@ const App = () => {
 }
 
 export default App;
+
+const ImgWithFallback = ({
+  src,
+  fallback,
+  type = 'image/webp',
+  ...delegated
+}) => {
+  return (
+    <picture>
+      <source srcSet={src} type={type} />
+      <img src={fallback} alt={delegated.alt} {...delegated} />
+    </picture>
+  );
+};
