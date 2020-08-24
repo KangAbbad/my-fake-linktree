@@ -20,7 +20,7 @@ const dataLink = [
     label: 'WhatsApp',
     url: "https://api.whatsapp.com/send?phone=87739999776&text=Samlekom%20mhamanx..."
   },
-]
+];
 
 const App = () => {
   return (
@@ -62,7 +62,7 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;
 
